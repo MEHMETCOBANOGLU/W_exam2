@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sınav Uygulaması</title>
+</head>
+
+<body>
+    <div id="baslik">
+        <h1 id="anabaslik" class="font-arial">Web Programlama Sınav Uygulaması</h1>
+    </div>
+
+    <div class="board">
+        <h3 id="time">Süre:</h3>
+        <h3 id="point">Puan:</h3>
+        <p id="qp1">1. Soru:</p>
+        <p id="qp2">2. Soru:</p>
+        <p id="qp3">3. Soru:</p>
+        <p id="qp4">4. Soru:</p>
+        <p id="qp5">5. Soru:</p>
+        <p id="qp6">6. Soru:</p>
+        <p id="qp7">7. Soru:</p>
+        <p id="qp8">8. Soru:</p>
+        <p id="qp9">9. Soru:</p>
+        <p id="qp10">10. Soru:</p>
+        <button id="bitirr" class="bitir">SINAVI BİTİR</button>
+
+    </div>
+    <div class="main font-arial">
+        <div class="soru aktif">
+            <p class="s font-bold">1. Üçgenin iç açılarının toplamı kaçtır?</p>
+            <input type="radio" name="q1" value="180" onclick="control(1,'180')"> 180 <br>
+            <input type="radio" name="q1" value="360" onclick="control(1,'360')"> 360 <br>
+            <input type="radio" name="q1" value="540" onclick="control(1,'540')"> 540 <br>
+            <input type="radio" name="q1" value="720" onclick="control(1,'720')"> 720 <br>
+
+        </div>
+
+        <div class="soru">
+            <p class="s font-bold">2. Aşağıda Verilen İlk Çağ Uygarlıklarından Hangisi Yazıyı İcat Etmiştir?</p>
+            <input type="radio" name="q2" value="Hititler" onclick="control(2,'Hititler')"> Hititler <br>
+            <input type="radio" name="q2" value="Elamlar " onclick="control(2,'Elamlar ')"> Elamlar <br>
+            <input type="radio" name="q2" value="Sümerler " onclick="control(2,'Sümerler ')"> Sümerler <br>
+            <input type="radio" name="q2" value="Urartular" onclick="control(2,'Urartular')"> Urartular <br>
+        </div>
+        <div class="soru">
+            <p class="s font-bold">3.Tsunami Felaketinde En Fazla Zarar Gören Güney Asya Ülkesi Aşağıdakilerden Hangisidir?</p>
+            <input type="radio" name="q3" value="Endonezya " onclick="control(3,'Endonezya ')"> Endonezya <br>
+            <input type="radio" name="q3" value="Srilanka " onclick="control(3,'Srilanka ')"> Srilanka <br>
+            <input type="radio" name="q3" value="Tayland " onclick="control(3,'Tayland ')"> Tayland <br>
+            <input type="radio" name="q3" value="Hindistan" onclick="control(3,'Hindistan')"> Hindistan <br>
+
+        </div>
+        <div class="soru">
+            <p class="s font-bold">4. Aşağıdakilerden Hangisi Dünya Sağlık Örgütünün Kısaltılmış İsmidir?</p>
+            <input type="radio" name="q4" value="Uhw " onclick="control(4,'Uhw ')"> Uhw <br>
+            <input type="radio" name="q4" value="Unıcef " onclick="control(4,'Unıcef ')"> Unıcef <br>
+            <input type="radio" name="q4" value="Who " onclick="control(4,'Who ')"> Who <br>
+            <input type="radio" name="q4" value="Nato" onclick="control(4,'Nato')"> Nato <br>
+        </div>
+        <div class="soru">
+            <p class="s font-bold">5. Romen Rakamında Hangi Sayı Yoktur?</p>
+            <input type="radio" name="q5" value="0" onclick="control(5,'0')"> 0 <br>
+            <input type="radio" name="q5" value="50" onclick="control(5,'50')"> 50 <br>
+            <input type="radio" name="q5" value="100" onclick="control(5,'100')"> 100 <br>
+            <input type="radio" name="q5" value="1000" onclick="control(5,'1000')"> 1000 <br>
+        </div>
+        <div class="soru">
+            <p class="s font-bold">6. Bir Gün Kaç Saniyedir?</p>
+            <input type="radio" name="q6" value="86400" onclick="control(6,'86400')"> 86400 <br>
+            <input type="radio" name="q6" value="86000" onclick="control(6,'86000')"> 86000 <br>
+            <input type="radio" name="q6" value="88600" onclick="control(6,'88600')"> 88600 <br>
+            <input type="radio" name="q6" value="84800" onclick="control(6,'84800')"> 84800 <br>
+        </div>
+        <div class="soru">
+            <p class="s font-bold">7. Hangi İlimizde Demiryolu Yoktur?</p>
+            <input type="radio" name="q7" value="Batman" onclick="control(7,'Batman')"> Batman <br>
+            <input type="radio" name="q7" value="Kütahya" onclick="control(7,'Kütahya')"> Kütahya <br>
+            <input type="radio" name="q7" value="Aydın" onclick="control(7,'Aydın')"> Aydın <br>
+            <input type="radio" name="q7" value="Muğla" onclick="control(7,'Muğla')"> Muğla <br>
+        </div>
+        <div class="soru">
+            <p class="s font-bold">8. Yerleşim birimlerinin gelişmesinde, ana ulaşım güzergâhlarının üzerinde veya yakınında bulunmasının önemli etkileri vardır. Aşağıdaki şehirlerin hangisinin gelişmesinde böyle bir ilişkiden söz edilemez?
+            </p>
+            <input type="radio" name="q8" value="Bartın" onclick="control(8,'Bartın')"> Bartın <br>
+            <input type="radio" name="q8" value="Aksaray" onclick="control(8,'Aksaray')"> Aksaray <br>
+            <input type="radio" name="q8" value="Kayseri" onclick="control(8,'Kayseri')"> Kayseri <br>
+            <input type="radio" name="q8" value="Eskişehir" onclick="control(8,'Eskişehir')"> Eskişehir <br>
+        </div>
+        <div class="soru font-bold">
+            <p class="s">9. Bir Sebepten Dolayı Tek Kulağına Küpe Takan Osmanlı Padişahı Kimdir?</p>
+            <input type="radio" name="q9" value="Kanuni Sultan Süleyman" onclick="control(9,'Kanuni Sultan Süleyman')"> Kanuni Sultan Süleyman <br>
+            <input type="radio" name="q9" value="Yavuz Sultan Selim" onclick="control(9,'Yavuz Sultan Selim')"> Yavuz Sultan Selim <br>
+            <input type="radio" name="q9" value="Orhan Bey" onclick="control(9,'Orhan Bey')"> Orhan Bey <br>
+            <input type="radio" name="q9" value="Fatih Sultan Selim" onclick="control(9,'Fatih Sultan Selim')"> Fatih Sultan Selim <br>
+        </div>
+        <div class="soru font-bold">
+            <p class="s">10. Aşağıdaki Ülkelerden Hangisinin Nüfusu Daha Fazladır?</p>
+            <input type="radio" name="q10" value="İspanya " onclick="control(10,'İspanya ')"> İspanya <br>
+            <input type="radio" name="q10" value="Fransa" onclick="control(10,'Fransa')"> Fransa <br>
+            <input type="radio" name="q10" value="İngiltere" onclick="control(10,'İngiltere')"> İngiltere <br>
+            <input type="radio" name="q10" value="Almanya" onclick="control(10,'Almanya')"> Almanya <br>
+        </div>
+
+
+
+
+        <div class="nav">
+            <button class="onceki">Önceki soru</button>
+            <button class="sonraki">Sonraki soru</button>
+        </div>
+
+
+    </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
